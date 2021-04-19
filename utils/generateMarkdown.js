@@ -1,4 +1,4 @@
-//renders license badges
+ //renders license badges
 const renderLicenseBadge = license => {
     let licenseBadge = ''
     switch (license) {
@@ -15,8 +15,43 @@ const renderLicenseBadge = license => {
         licenseBadge = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
         break;
       case 'No License':
-        licenseBadge = ''
+        licenseBadge = ``
         break;
     }
     return licenseBadge
   }
+
+// function to generate markdown for README
+const generateMarkdown = (data) => {
+const badge = renderLicenseBadge(data.license);
+return `# Title 
+${data.title}
+## Description
+${data.description}
+## Badges
+${badge}
+## Table of contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
+## Installation 
+${data.install}
+## Usage  
+${data.usage}
+## Tests  
+${data.test}
+## Contributing 
+${data.contributing}
+## License  
+${data.license}
+## Questions  
+GitHub: [${data.username}](https://github.com/${data.username})
+Email: [${data.email}](mailto:${data.email})
+`;
+}
+
+module.exports = generateMarkdown;
+
