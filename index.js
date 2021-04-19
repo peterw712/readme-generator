@@ -100,5 +100,32 @@ const prompts = [
         choices: ['MIT', 'Apache License 2.0', 'Eclipse Public License 1.0', 'Mozilla Public License 2.0', 'No License']
     },
 ];
-  
+
+//function to write data to file
+const writeToFile = (fileName, data)  => {
+    //create README file
+        fs.writeFile('./README.md', (fileName, data), err => {
+        if (err) {
+            return console.log(err);
+          }
+          console.log('File created!');
+          });
+        }
+
+//function to initialize app
+const initialize = () => {
+    return inquirer.prompt(prompts)
+}
+
+initialize()
+
+//generate data on promise resolution
+.then(data => {
+    return generateMarkdown(data);
+})
+
+//write data to file on promise resolution
+.then(data => {
+    return writeToFile('README.md', data)
+})
   

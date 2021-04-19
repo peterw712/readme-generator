@@ -28,7 +28,6 @@ return `# Title
 ${data.title}
 ## Description
 ${data.description}
-## Badges
 ${badge}
 ## Table of contents
 * [Installation](#installation)
