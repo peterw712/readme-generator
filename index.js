@@ -104,7 +104,7 @@ const prompts = [
 //function to write data to file
 const writeToFile = (fileName, data)  => {
     //create README file
-        fs.writeFile('./README.md', (fileName, data), err => {
+        fs.writeFile('./READMEsample.md', (fileName, data), err => {
         if (err) {
             return console.log(err);
           }
