@@ -1,8 +1,7 @@
-# Title 
-asdf
+# Sample
 ## Description
 asdf
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Table of contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -19,7 +18,6 @@ asdf
 ## Contributing 
 asdf
 ## License  
-MIT
+Apache License 2.0
 ## Questions  
-GitHub: [asdf](https://github.com/asdf)
-Email: [asdf](mailto:asdf)
+GitHub: [peterw712](https://github.com/peterw712)Email: [peterw712@outlook.com](mailto:peterw712@outlook.com)
